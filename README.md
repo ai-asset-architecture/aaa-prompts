@@ -25,6 +25,17 @@ Each prompt package should include:
 - `metadata.json` is required and must be valid JSON.
 - `prompt.md` must include a clear purpose and expected output format.
 
+## When to Add New Prompts
+- New features or workflows require stable prompts.
+- Incidents/regressions (codify the fix as a prompt update).
+- New schema versions or format changes.
+- Before adding new quality gates.
+- After bootstrap completion to cover common needs.
+
+## Ownership
+- Primary: `@aaa/pm`
+- Approval: `@aaa/architect`
+
 ## How to Pull via aaa-tools
 ```bash
 aaa pull prompt:<name>@<version>
