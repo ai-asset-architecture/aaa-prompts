@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AAA Prompt",
+  "type": "object",
+  "required": ["name", "version", "input_schema", "prompt"],
+  "properties": {
+    "name": { "type": "string" },
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "input_schema": { "type": "object" },
+    "prompt": { "type": "string" }
+  }
+}

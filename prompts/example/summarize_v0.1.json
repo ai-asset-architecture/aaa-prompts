@@ -1,0 +1,11 @@
+{
+  "name": "summarize",
+  "version": "0.1.0",
+  "description": "Summarize content into bullets",
+  "input_schema": {
+    "type": "object",
+    "required": ["text"],
+    "properties": { "text": { "type": "string" } }
+  },
+  "prompt": "Summarize the following text into 5 bullets:\n\n{{text}}"
+}
