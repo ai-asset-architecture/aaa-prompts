@@ -1,0 +1,14 @@
+{
+  "name": "aaa-onboarding-review",
+  "version": "0.1.0",
+  "description": "Review org onboarding docs and flag missing member prerequisites or broken steps.",
+  "input_schema": {
+    "type": "object",
+    "required": ["profile_readme", "sop"],
+    "properties": {
+      "profile_readme": { "type": "string" },
+      "sop": { "type": "string" }
+    }
+  },
+  "prompt": "You are auditing onboarding docs for an org member.\n\nProfile README:\n{{profile_readme}}\n\nSOP:\n{{sop}}\n\nReturn:\n1) Missing member prerequisites (gh auth setup-git, private downloads, plan sanity checks).\n2) Mismatched steps between profile and SOP.\n3) Broken commands or copy-paste risks.\nUse short bullets, include exact line quotes when possible."
+}

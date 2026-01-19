@@ -1,0 +1,15 @@
+{
+  "name": "aaa-bootstrap-codex-brief",
+  "version": "0.1.0",
+  "description": "Generate a compact execution brief for Codex to bootstrap a project using AAA runbooks.",
+  "input_schema": {
+    "type": "object",
+    "required": ["plan_path", "workspace_dir"],
+    "properties": {
+      "plan_path": { "type": "string" },
+      "workspace_dir": { "type": "string" },
+      "runbook_path": { "type": "string" }
+    }
+  },
+  "prompt": "Create a short, imperative execution brief for Codex.\n\nInputs:\n- plan_path: {{plan_path}}\n- workspace_dir: {{workspace_dir}}\n- runbook_path: {{runbook_path}}\n\nRequirements:\n- Mention the runbook to read.\n- Use WORKSPACE_DIR and plan_path explicitly.\n- End with: 'Output JSON report per output.schema.json'.\n- Keep to 6 lines max."
+}
