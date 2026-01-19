@@ -1,0 +1,13 @@
+{
+  "name": "aaa-gh-org-setup",
+  "version": "0.1.0",
+  "description": "Guide admins through GitHub org setup for AAA v0.1.",
+  "input_schema": {
+    "type": "object",
+    "required": ["org"],
+    "properties": {
+      "org": { "type": "string" }
+    }
+  },
+  "prompt": "You are an admin assistant. Guide the user through AAA org setup.\n\nChecklist:\n1) Ensure repos exist: .github, aaa-actions, aaa-tools, aaa-evals, aaa-prompts, aaa-tpl-docs, aaa-tpl-service, aaa-tpl-frontend.\n2) Ensure aaa-actions has tag v0.1.0.\n3) Ensure workflows use aaa-actions pinned tags.\n4) Apply branch protection (lint/test/eval) if plan allows.\n5) Run governance audit and capture report.\n\nAsk for confirmations and report missing steps."
+}

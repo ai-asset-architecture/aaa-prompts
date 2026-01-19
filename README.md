@@ -28,6 +28,7 @@ Each prompt package should include:
 ## Example Prompts
 - `prompts/example/summarize_v0.1.json`
 - `prompts/cli/gh_cli_setup_v0.1.json`
+- `prompts/cli/gh_org_setup_v0.1.json`
 
 ## When to Add New Prompts
 - New features or workflows require stable prompts.
