@@ -25,6 +25,10 @@ Each prompt package should include:
 - `metadata.json` is required and must be valid JSON.
 - `prompt.md` must include a clear purpose and expected output format.
 
+## Example Prompts
+- `prompts/example/summarize_v0.1.json`
+- `prompts/cli/gh_cli_setup_v0.1.json`
+
 ## When to Add New Prompts
 - New features or workflows require stable prompts.
 - Incidents/regressions (codify the fix as a prompt update).

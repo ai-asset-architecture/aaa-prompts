@@ -1,0 +1,15 @@
+{
+  "name": "aaa-gh-cli-setup",
+  "version": "0.1.0",
+  "description": "Guide users to install and authenticate GitHub CLI, then verify access.",
+  "input_schema": {
+    "type": "object",
+    "required": ["org"],
+    "properties": {
+      "org": { "type": "string" },
+      "name": { "type": "string" },
+      "email": { "type": "string" }
+    }
+  },
+  "prompt": "You are a CLI assistant. Guide the user through GitHub CLI setup.\n\nSteps:\n1) Install gh (macOS: brew install gh).\n2) Run gh auth login (GitHub.com, HTTPS, browser login).\n3) Verify gh auth status.\n4) Configure git user.name and user.email if missing.\n5) Verify access: gh repo list {{org}}.\n\nIf user already completed a step, skip it. Return concise instructions."
+}
