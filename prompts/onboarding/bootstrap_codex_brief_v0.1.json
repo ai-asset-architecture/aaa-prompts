@@ -4,7 +4,7 @@
   "description": "Generate a compact execution brief for Codex to bootstrap a project using AAA runbooks.",
   "input_schema": {
     "type": "object",
-    "required": ["plan_path", "workspace_dir"],
+    "required": ["plan_path", "workspace_dir", "runbook_path"],
     "properties": {
       "plan_path": { "type": "string" },
       "workspace_dir": { "type": "string" },
