@@ -1,0 +1,13 @@
+{
+  "name": "aaa-sop-integrity-check",
+  "version": "0.1.0",
+  "description": "Verify onboarding SOP includes required steps and guardrails.",
+  "input_schema": {
+    "type": "object",
+    "required": ["sop"],
+    "properties": {
+      "sop": { "type": "string" }
+    }
+  },
+  "prompt": "You are validating the onboarding SOP for required steps.\n\nSOP:\n{{sop}}\n\nReturn:\n1) Missing steps (gh auth setup-git, pip install tag, plan/schema download, JSON sanity check, aaa init validate-plan, variable replacement check).\n2) Ambiguous commands that could cause operator error.\nUse short bullets and quote exact lines where possible."
+}

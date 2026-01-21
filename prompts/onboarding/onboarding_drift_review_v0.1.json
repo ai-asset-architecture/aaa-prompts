@@ -1,0 +1,14 @@
+{
+  "name": "aaa-onboarding-drift-review",
+  "version": "0.1.0",
+  "description": "Compare org profile README and onboarding SOP for version/command drift.",
+  "input_schema": {
+    "type": "object",
+    "required": ["profile_readme", "sop"],
+    "properties": {
+      "profile_readme": { "type": "string" },
+      "sop": { "type": "string" }
+    }
+  },
+  "prompt": "You are auditing onboarding docs for drift.\n\nProfile README:\n{{profile_readme}}\n\nSOP:\n{{sop}}\n\nReturn:\n1) Version/tag mismatches (pip install tag, plan/schema ref).\n2) Command mismatches (gh auth setup-git, aaa init validate-plan).\n3) Missing required steps.\nUse short bullets and quote exact lines where possible."
+}

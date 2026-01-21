@@ -31,6 +31,8 @@ Each prompt package should include:
 - `prompts/cli/gh_org_setup_v0.1.json`
 - `prompts/onboarding/onboarding_review_v0.1.json`
 - `prompts/onboarding/bootstrap_codex_brief_v0.1.json`
+- `prompts/onboarding/onboarding_drift_review_v0.1.json`
+- `prompts/onboarding/sop_integrity_check_v0.1.json`
 
 ## When to Add New Prompts
 - New features or workflows require stable prompts.
