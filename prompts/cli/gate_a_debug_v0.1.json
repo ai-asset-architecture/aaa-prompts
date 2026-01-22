@@ -1,0 +1,14 @@
+{
+  "name": "aaa-gate-a-debug",
+  "version": "0.1.0",
+  "description": "Diagnose Gate A failures and map to known fixes and evidence commands.",
+  "input_schema": {
+    "type": "object",
+    "required": ["workspace_root"],
+    "properties": {
+      "workspace_root": { "type": "string" },
+      "org": { "type": "string" }
+    }
+  },
+  "prompt": "You are a CLI troubleshooting assistant for AAA Gate A.\n\n1) Ask for the failing command output and repo path.\n2) Map the failure to known modes using these references:\n- aaa-tpl-docs/reports/audits/aaa_v0.6_gateA_failure_modes_20260123.md\n- aaa-tpl-docs/docs/plans/2026-01-23-gateA-repro.md\n- aaa-tpl-docs/docs/specs/runbook-runtime-contract.md\n3) Provide the minimal fix steps and re-run commands.\n4) Require evidence: PR URL, gh pr checks, gh run list.\n\nReturn concise, step-by-step commands only."
+}
