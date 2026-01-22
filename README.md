@@ -29,6 +29,7 @@ Each prompt package should include:
 - `prompts/example/summarize_v0.1.json`
 - `prompts/cli/gh_cli_setup_v0.1.json`
 - `prompts/cli/gh_org_setup_v0.1.json`
+- `prompts/cli/gate_a_debug_v0.1.json`
 - `prompts/onboarding/onboarding_review_v0.1.json`
 - `prompts/onboarding/bootstrap_codex_brief_v0.1.json`
 - `prompts/onboarding/onboarding_drift_review_v0.1.json`
